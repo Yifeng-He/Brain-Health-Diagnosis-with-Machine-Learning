@@ -33,7 +33,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 pipeline_classifier = Pipeline([('scl', StandardScaler()), ('clf', LogisticRegression(random_state=1)) ])
 
-# tune the inverse regularization parameter C in logistric regression model
+# tune the inverse regularization parameter C in logistic regression model
 param_range = [0.01, 0.1, 1.0, 10.0]
 # parameter grid [{para1:[value11, value12], para2:[value21, value22]}, {para1:[value], para2:[value2], para3:[value3]}]
 param_grid=[{'clf__C': param_range} ]
